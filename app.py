@@ -75,18 +75,32 @@ def main():
     dt = datetime.date(2024,7, 1)
     for _ in range(2):
         today = dt + datetime.timedelta(days=1)
+# A frequent (daily, weekly, hourly, monthly) reminder on their phone to fill in their diary entry.
+# Perhaps a morning message remindig you of your tasks for the day. An option to add or remove daily tasks
+# For new tasks, how much time do you hope to spend on them. 
+# Why do you want to do that task ?
+# Is it reevant to your background both personal and professional
+# - have you completed your diary entry
+# - which tasks did you complete (work on )
+# Which tasks did you enjoy doing
+# Did you complete all the goals for today
+# which tasks did you not complete
+# Which of the tasks did you not enjoy, 
+# What will you do differently
+# Be honest, how much time playing computer games, watching online videos (netflix, youtube) or social media
+# Would you like to talk to a professional (life coach, therapist, psychologist ?) 
 
         # ask user what they did today
-        activity = input("What did you do today? ")
+        activity = input("Tell me about your day? ")
 
         # ask user how long for?
         duration = input("How long did it take? ")
 
         # ask user what went well
-        positive_aspects = input("What went well? ")
+        positive_aspects = input("What did you accomplish? ")
 
         # ask user what went badly
-        challenges = input("What went badly? ")
+        challenges = input("How will you do things differently ? ")
 
         # save data to database
         save_data(today, activity, duration, positive_aspects, challenges)
