@@ -73,7 +73,7 @@ def main():
     # today = datetime.date.today()
     # code block to save 10 days of data into the db
     dt = datetime.date(2024,7, 1)
-    for _ in range(10):
+    for _ in range(2):
         today = dt + datetime.timedelta(days=1)
 
         # ask user what they did today
