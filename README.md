@@ -11,11 +11,9 @@ requires chatgpt openAPI key
 take file .env_template and save it as .env
 insert your openAPI key into this file
 
-#activate the venv
+# activate the venv
 ./venv/bin/activate
 
 
 # to run the app after activate the env
 python app.py
-
-# added line to check
